@@ -13,7 +13,7 @@ class CreateProposalRequest {
   public whatsapp: string
   public zipCode: string
   public numberResident: string
-  public uf: string
+  public UF: string
   public contact: string
   public email: string
   public contractReadjustment: Date
@@ -40,7 +40,7 @@ class CreateProposalRequest {
     whatsapp: string,
     zipCode: string,
     numberResident: string,
-    uf: string,
+    UF: string,
     contact: string,
     email: string,
     contractReadjustment: Date,
@@ -66,7 +66,7 @@ class CreateProposalRequest {
     this.whatsapp = whatsapp
     this.zipCode = zipCode
     this.numberResident = numberResident
-    this.uf = uf
+    this.UF = UF
     this.contact = contact
     this.email = email
     this.contractReadjustment = contractReadjustment

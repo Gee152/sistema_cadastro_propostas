@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from "typeorm"
 
-@Entity()
+@Entity({schema: 'public', name: 'userBroker'})
 class UserBrokerModel {
     @PrimaryGeneratedColumn('increment')
         public ID: number | null
