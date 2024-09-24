@@ -3,16 +3,16 @@ class UserBrokerEntity {
   public name: string
   public email: string
   public password: string
-  public createdAt: Date | null
-  public updatedAt: Date | null
+  public createdAt: Date
+  public updatedAt: Date
 
   constructor(
-    ID: number | null = null,
+    ID: number | null,
     name: string,
     email: string,
     password: string,
-    createdAt: Date | null = null,
-    updatedAt: Date | null = null
+    createdAt: Date,
+    updatedAt: Date
   ) {
     this.ID = ID
     this.name = name

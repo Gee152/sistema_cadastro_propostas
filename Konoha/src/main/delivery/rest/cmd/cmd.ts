@@ -1,7 +1,7 @@
 import  express   from 'express'
 import http from 'http'
-import { Router } from '../../router/index'
-import { PORT } from '../cmd'
+import { PORT } from '../config/cmd'
+import { Router } from '../router'
 
 class cmdRes {
   private app: express.Application

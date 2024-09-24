@@ -15,7 +15,7 @@ class ProposalModel {
         public holder: string
     
     @Column({ name: 'dependents', type: 'varchar', nullable: true, length: '255' })
-        public dependents: string
+        public dependents: string | null
     
     @Column({ name: 'date_of_birth', type: 'date', nullable: false })
         public dateOfBirth: Date
@@ -24,7 +24,7 @@ class ProposalModel {
         public cpf: string
 
     @Column({ name: 'identity', type: 'varchar', nullable: true, length: '20' })
-        public identity: string
+        public identity: string | null
 
     @Column({ name: 'proposal_number', type: 'varchar', nullable: false, length: '100' })
         public proposalNumber: string
@@ -91,10 +91,10 @@ class ProposalModel {
         address: string,
         codOperator: string,
         holder: string,
-        dependents: string,
+        dependents: string | null,
         dateOfBirth: Date,
         cpf: string,
-        identity: string,
+        identity: string | null,
         proposalNumber: string,
         whatsapp: string,
         zipCode: string,

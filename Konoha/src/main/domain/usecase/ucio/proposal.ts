@@ -1,7 +1,7 @@
 import { ErrorEntity } from "../../entity/error"
 import { ProposalEntity } from "../../entity/proposal"
 
-class CreateProposalRequest {
+class CreateProposalUseCaseRequest {
   public address: string
   public codOperator: string
   public holder: string
@@ -83,7 +83,7 @@ class CreateProposalRequest {
   }
 }
 
-class CreateProposalResponse {
+class CreateProposalUseCaseResponse {
   public proposal: ProposalEntity | null
   public error: ErrorEntity | null
 
@@ -93,8 +93,29 @@ class CreateProposalResponse {
   }
 }
 
+class GetProposalUseCaseRequest {
+  public ID: number
+
+  constructor(ID: number) {
+      this.ID = ID
+  }
+}
+
+class GetProposalUseCaseResponse {
+  public proposal: ProposalEntity | null
+  public error: ErrorEntity | null
+
+  constructor(proposal: ProposalEntity | null, error: ErrorEntity | null) {
+      this.proposal = proposal
+      this.error = error
+  }
+}
+
+
 export {
-  CreateProposalRequest,
-  CreateProposalResponse
+  CreateProposalUseCaseRequest,
+  CreateProposalUseCaseResponse,
+  GetProposalUseCaseRequest,
+  GetProposalUseCaseResponse
 }
 

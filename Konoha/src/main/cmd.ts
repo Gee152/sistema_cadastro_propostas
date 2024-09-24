@@ -1,4 +1,4 @@
-import { cmdRes } from "./delivery/rest/config/cmd/cmd"
+import { cmdRes } from "./delivery/rest/cmd/cmd";
 
 class Cmd {
     private CMD_REST = 'rest'

@@ -25,8 +25,8 @@ class ProposalEntity {
   public broker: string 
   public admFee: number 
   public supervisor: string 
-  public createdAt: Date | null 
-  public updatedAt: Date | null 
+  public createdAt: Date 
+  public updatedAt: Date
 
   constructor(
       ID: number | null,
@@ -55,8 +55,8 @@ class ProposalEntity {
       broker: string,
       admFee: number,
       supervisor: string,
-      createdAt: Date | null,
-      updatedAt: Date | null
+      createdAt: Date,
+      updatedAt: Date
   ) {
       this.ID = ID 
       this.address = address 
